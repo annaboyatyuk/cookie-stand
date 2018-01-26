@@ -183,7 +183,7 @@ var alki = {
   },
   render: function() {
     var alki = document.getElementById('alkilist');
-    var alkib = document.getElementById('alki');
+    var alkib = document.getElementById('alkib');
     this.calcRandCustPerHour();
     this.calcCookiesSoldPerHour();
     var h3El = document.createElement('h3');
@@ -198,3 +198,6 @@ var alki = {
   }
 };
 alki.render();
+
+
+
