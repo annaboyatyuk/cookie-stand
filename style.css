@@ -1,27 +1,57 @@
 * {
     font-family: Helvetica;
     font-size: 20px;
-    background-color: salmon;
+    background-color: rgb(189, 255, 229);
 }
 
-/* h3 {
-    font-size: 22px;
+#title {
+    background-color: rgb(92, 195, 152);
+    color: rgb(3, 6, 5);
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    width: 1000px;
-    color: #42c583;
+    margin: auto, 50px;
+    font-size: 40px;
+    display: inline-block;
+    padding: 15px;
+    
+    
 }
 
-table {
-    border: solid black 1px;
-}
-
-th {
-    width: 60px;
-    border: solid black 1px;
-}
-
-td {
+.center {
     text-align: center;
-    height: 30px;
-    border: solid black 1px;
-} */
+}
+
+#locations {
+    text-align: center;
+    margin: 100px;
+}
+
+.locatebar {
+    background-color: rgb(0, 78, 44);
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+}
+
+
+#salmon {
+    float: left;
+    width: 20%;
+    position: absolute;
+    align-self: auto;
+    z-index: 0;
+
+}
+
+.footerbar {
+    background-color: rgb(0, 78, 44);
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+}
