@@ -27,7 +27,6 @@ var firstAndPike = {
   render: function() {
     var firstAndPike = document.getElementById('firstandpike');
     var fandp = document.getElementById('fandp');
-    var fandptotal = document.getElementById('fandptotal');
     this.calcRandCustPerHour();
     this.calcCookiesSoldPerHour();
     var h3El = document.createElement('h3');
@@ -39,9 +38,7 @@ var firstAndPike = {
       console.log(liEl);
       firstAndPike.appendChild(liEl);
     }
-    var totalEl = document.createElement('li');
-    totalEl.textContent = 'Total: ' + this.totalCookies;
-    fandptotal.appendChild(totalEl);
+    liEl.textContent = 'Total: ' + this.totalCookies;
   }
 };
 firstAndPike.render();
@@ -73,7 +70,6 @@ var seaTacAirport = {
   render: function() {
     var seaTacAirport = document.getElementById('seatacair');
     var seatac = document.getElementById('seatac');
-    var seatactotal = document.getElementById('seatactotal');
     this.calcRandCustPerHour();
     this.calcCookiesSoldPerHour();
     var h3El = document.createElement('h3');
@@ -85,9 +81,7 @@ var seaTacAirport = {
       console.log(liEl);
       seaTacAirport.appendChild(liEl);
     }
-    var totalEl = document.createElement('li');
-    totalEl.textContent = 'Total: ' + this.totalCookies;
-    seatactotal.appendChild(totalEl);
+    liEl.textContent = 'Total: ' + this.totalCookies;
   }
 };
 seaTacAirport.render();
@@ -118,7 +112,6 @@ var seattleCenter = {
   render: function() {
     var seattleCenter = document.getElementById('seattlecenter');
     var center = document.getElementById('center');
-    var seattlecentertotal = document.getElementById('seattlecentertotal');
     this.calcRandCustPerHour();
     this.calcCookiesSoldPerHour();
     var h3El = document.createElement('h3');
@@ -130,9 +123,7 @@ var seattleCenter = {
       console.log(liEl);
       seattleCenter.appendChild(liEl);
     }
-    var totalEl = document.createElement('li');
-    totalEl.textContent = 'Total: ' + this.totalCookies;
-    seattlecentertotal.appendChild(totalEl);
+    liEl.textContent = 'Total: ' + this.totalCookies;
   }
 };
 seattleCenter.render();
@@ -164,7 +155,6 @@ var capitolHill = {
   render: function() {
     var capitolHill = document.getElementById('capitolhill');
     var capHill = document.getElementById('caphill');
-    var capitolhilltotal = document.getElementById('capitolhilltotal');
     this.calcRandCustPerHour();
     this.calcCookiesSoldPerHour();
     var h3El = document.createElement('h3');
@@ -176,9 +166,7 @@ var capitolHill = {
       console.log(liEl);
       capitolHill.appendChild(liEl);
     }
-    var totalEl = document.createElement('li');
-    totalEl.textContent = 'Total: ' + this.totalCookies;
-    capitolhilltotal.appendChild(totalEl);
+    liEl.textContent = 'Total: ' + this.totalCookies;
   }
 };
 capitolHill.render();
@@ -209,7 +197,6 @@ var alki = {
   render: function() {
     var alki = document.getElementById('alkilist');
     var alkib = document.getElementById('alkib');
-    // var alkitotal = document.getElementById('alkitotal');
     this.calcRandCustPerHour();
     this.calcCookiesSoldPerHour();
     var h3El = document.createElement('h3');
@@ -221,9 +208,7 @@ var alki = {
       console.log(liEl);
       alki.appendChild(liEl);
     }
-    // var totalEl = document.createElement('li');
     liEl.textContent = 'Total: ' + this.totalCookies;
-    // alkitotal.appendChild(liEl);
   }
 };
 alki.render();
