@@ -79,24 +79,32 @@ makeDailyTotal();
 
 function makeTableRow() {
   for (var i = 0; i < allLocations.length; i++) {
-    var cookieTable = document.getElementById('cookiestands');
     var trEl = document.createElement('tr');
+    tableEl.appendChild(trEl);
     var tdEl = document.createElement('td');
     tdEl.textContent = allLocations[i].name;
-    cookieTable.appendChild(tdEl);
+    trEl.appendChild(tdEl);
 
     for (var j = 0; j < hours.length; j++) {
       tdEl = document.createElement('td');
       tdEl.textContent = allLocations[i].cookiesSoldPerHour[j];
-      cookieTable.appendChild(tdEl);
+      trEl.appendChild(tdEl);
     }
-    // tdEl = document.createElement('td');
-    // tdEl.textContent = allLocations[j].totalCookies;
-    // trEl.appendChild(tdEl);
-    // tableEl.appendChild(trEl);
+    tdEl = document.createElement('td');
+    // trEl = document.createElement('tr');
+    tableEl.appendChild(trEl);
+    tdEl.textContent = allLocations[i].totalCookies;
+    trEl.appendChild(tdEl);
   }
 }
 makeTableRow();
+
+
+
+// tdEl = document.createElement('td');
+// tdEl.textContent = allLocations[j].totalCookies;
+// trEl.appendChild(tdEl);
+// tableEl.appendChild(trEl);
 
 
 
