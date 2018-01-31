@@ -19,6 +19,10 @@ table {
 th {
     width: 60px;
     border: solid black 1px;
+    text-align: center;
+    height: 30px;
+    border: solid black 1px;
+    background-color: #7cc3a0;
 }
 
 td {
@@ -49,3 +53,5 @@ footer {
     right:0;
     height:30px;
 }
+
+
