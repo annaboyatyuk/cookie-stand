@@ -32,16 +32,16 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookiesPerSale) {
   this.calcCookiesSoldPerHour();
 }
 //call constructors
-function makeStore() {
-  new MakeLocation('First and Pike', 23, 65, 6.3);
-  new MakeLocation('Seatac Airport', 3, 24, 1.2);
-  new MakeLocation('Seattle Center', 11, 38, 3.7);
-  new MakeLocation('Capitol Hill', 20, 38, 2.3);
-  new MakeLocation('Alki', 2, 16, 4.6);
-}
-makeStore();
+// function makeStore() {
+new MakeLocation('First and Pike', 23, 65, 6.3);
+new MakeLocation('Seatac Airport', 3, 24, 1.2);
+new MakeLocation('Seattle Center', 11, 38, 3.7);
+new MakeLocation('Capitol Hill', 20, 38, 2.3);
+new MakeLocation('Alki', 2, 16, 4.6);
+// }
+// makeStore();
 
-console.log(makeStore());
+// console.log(makeStore());
 
 
 // create a table header function
@@ -82,6 +82,8 @@ function makeTableRow() {
     var tdEl = document.createElement('td');
     tdEl.textContent = allLocations[i].name;
     trEl.appendChild(tdEl);
+
+    console.log(allLocations);
 
     for (var j = 0; j < hours.length; j++) {
       tdEl = document.createElement('td');
