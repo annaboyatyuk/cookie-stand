@@ -12,7 +12,30 @@
 
 <body>
     <h1>Salmon Cookie Sales</h1>
+
+    <form id="addstore">
+        <fieldset>
+            <legend>Add A New Store Location!</legend>
+
+            <label for="storename">Location Name</label>
+            <input type="text" name="storename"/>
+
+            <label for="mincust">Minimum Customers Per Hour</label>
+            <input type="text" name"mincust"/>
+
+            <label for="maxcust">Maximum Customers Per Hour</label>
+            <input type="text" name"maxcust"/>
+
+            <label for="avgcookies">Average Cookies Per Sale</label>
+            <input type="text" name="avgcookies"/>
+
+            <button type="submit">Add a New Location!</button>
+            
+        </fieldset>
+    </form>
+    
     <table id="cookiestands"></table> 
+
     <footer>
         <a class="footerbar"href="index.html">Home</a>
     </footer>

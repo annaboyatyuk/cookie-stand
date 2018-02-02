@@ -31,17 +31,13 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookiesPerSale) {
   this.calcRandCustPerHour();
   this.calcCookiesSoldPerHour();
 }
-//call constructors
-// function makeStore() {
+
 new MakeLocation('First and Pike', 23, 65, 6.3);
 new MakeLocation('Seatac Airport', 3, 24, 1.2);
 new MakeLocation('Seattle Center', 11, 38, 3.7);
 new MakeLocation('Capitol Hill', 20, 38, 2.3);
 new MakeLocation('Alki', 2, 16, 4.6);
-// }
-// makeStore();
 
-// console.log(makeStore());
 
 
 // create a table header function
@@ -51,7 +47,6 @@ new MakeLocation('Alki', 2, 16, 4.6);
 // first solve the problem and then tell the computer how to doit
 // organize the locations on the left
 // break the table down into pieces . you could even do one function per row
-// 
 
 var tableEl = document.getElementById('cookiestands');
 
@@ -65,6 +60,7 @@ function makeTableHeader() {
     tableEl.appendChild(tdEl);
   }
 }
+
 makeTableHeader();
 
 function makeDailyTotal() {
