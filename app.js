@@ -38,16 +38,6 @@ new MakeLocation('Seattle Center', 11, 38, 3.7);
 new MakeLocation('Capitol Hill', 20, 38, 2.3);
 new MakeLocation('Alki', 2, 16, 4.6);
 
-
-
-// create a table header function
-// more dom manipulation
-// notrender function. use a new function for the header
-// pick it apart piece by peice.
-// first solve the problem and then tell the computer how to doit
-// organize the locations on the left
-// break the table down into pieces . you could even do one function per row
-
 var tableEl = document.getElementById('cookiestands');
 
 function makeTableHeader() {
@@ -94,5 +84,29 @@ function makeTableRow() {
 }
 makeTableRow();
 
+var storeForm = document.getElementById('addstore');
 
+function createNewLocation(event) {
+  event.preventDefault();
+
+  var storeName = event.target.storename.value;
+  var minCust = parseInt(event.target.mincust.value);
+  var maxCust = parseInt(event.target.maxcust.value);
+  var avgCookies = parseFloat(event.target.avgcookies.value);
+
+  if(!storeName || !minCust || !maxCust || !avgCookies)
+    return alert('all fields required');
+
+  var row = storeName;
+  var addStore = new MakeLocation(storeName, minCust, maxCust, avgCookies, row);
+  addStore.calcCookiesSoldPerHour();
+  allLocations.push(addStore);
+  makeTableRow();
+
+  event.target.storename.value = null;
+  event.target.mincust.value = null;
+  event.target.maxcust.value = null;
+  event.target.avgcookies.value = null;
+}
+storeForm.addEventListener('submit',(createNewLocation));
 
