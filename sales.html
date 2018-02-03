@@ -6,35 +6,39 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Page Title</title>
+    <title>Salmon Cookie Sales</title>
     <link rel="stylesheet" href="sales.css" />
 </head>
 
 <body>
-    <div>
-    <h1>Salmon Cookie Sales Projections</h1>
-    </div>
-    <div>
-        <h3 id="fandp"></h3>
-        <ul id="firstandpike"></ul>
-    </div>
-    <div>
-        <h3 id="seatac"></h3>
-        <ul id="seatacair"></ul>
-    </div>
-    <div>
-        <h3 id="center"></h3>
-        <ul id="seattlecenter"></ul>
+    <h1>Salmon Cookie Sales</h1>
 
-    </div>
-    <div>
-        <h3 id="caphill"></h3>
-        <ul id="capitolhill"></ul>
-    </div>
-    <div>
-        <h3 id="alkib"></h3>
-        <ul id="alkilist"></ul>
-    </div>
+    <form id="addstore">
+        <fieldset>
+            <legend>Add A New Store Location!</legend>
+
+            <label for="storename">Location Name</label>
+            <input type="text" id="storename"/>
+
+            <label for="mincust">Minimum Customers Per Hour</label>
+            <input type="text" id="mincust"/>
+
+            <label for="maxcust">Maximum Customers Per Hour</label>
+            <input type="text" id="maxcust"/>
+
+            <label for="avgcookies">Average Cookies Per Sale</label>
+            <input type="text" id="avgcookies"/>
+
+            <button type="submit">Add a New Location!</button>
+            
+        </fieldset>
+    </form>
+    
+    <table id="cookiestands"></table> 
+
+    <footer>
+        <a class="footerbar"href="index.html">Home</a>
+    </footer>
     <script src="app.js"></script>
 </body>
 
