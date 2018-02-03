@@ -95,10 +95,10 @@ function createNewLocation(event) {
   var avgCookies = parseFloat(event.target.avgcookies.value);
 
   if(!storeName || !minCust || !maxCust || !avgCookies)
-    return alert('all fields required');
+    return alert('All Fields Required');
 
-  var row = storeName;
-  var addStore = new MakeLocation(storeName, minCust, maxCust, avgCookies, row);
+  // var row = storeName;
+  var addStore = new MakeLocation(storeName, minCust, maxCust, avgCookies); //, row
   addStore.calcCookiesSoldPerHour();
   allLocations.push(addStore);
   makeTableRow();
