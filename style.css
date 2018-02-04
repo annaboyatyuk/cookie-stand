@@ -110,12 +110,27 @@ p {
 
 #family {
     width: 80%;
-    margin: auto;
+    margin: 40px;
+    overflow: auto;
 }
 
 #story {
     background-color: rgb(255, 130, 113);
     width: 40%;
     margin: auto;
+    border-bottom: 150px;
+    position: relative;
 }
+
+#shirt {
+    position: relative;
+    margin-left: auto;
+    overflow: auto;
+}
+
+#merch {
+    margin-top: 60px;
+}
+
+
 
