@@ -14,8 +14,6 @@
     font-size: 40px;
     display: inline-block;
     padding: 15px;
-    
-    
 }
 
 .center {
@@ -76,6 +74,63 @@ footer {
 
 .backcontent {
     background-color: rgb(255, 198, 175);
-    /* border-color: rgb(209, 120, 84);
-    border: 5px; */
 }
+
+
+.hours {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+    font-size: 50px;
+}
+
+.centerhours {
+    text-align: center;
+    max-width: 500px;
+    position: relative;
+    align-content: center;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    background-color: rgb(255, 198, 175);
+    width: 95%;
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background-color: rgb(255, 198, 175);
+    width: 95%;
+}
+
+#family {
+    width: 80%;
+    margin: 40px;
+    overflow: auto;
+}
+
+#story {
+    background-color: rgb(255, 130, 113);
+    width: 40%;
+    margin: auto;
+    border-bottom: 150px;
+    position: relative;
+}
+
+#shirt {
+    position: relative;
+    margin-left: auto;
+    overflow: auto;
+}
+
+#merch {
+    margin-top: 60px;
+}
+
+
+

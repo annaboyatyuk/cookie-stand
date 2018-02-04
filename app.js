@@ -49,16 +49,12 @@ function makeTableHeader() {
     tdEl.textContent = hours[i];
     tableEl.appendChild(tdEl);
   }
-}
-
-makeTableHeader();
-
-function makeDailyTotal() {
-  var thEl = document.createElement('th');
+  thEl = document.createElement('th');
   thEl.textContent = 'Daily Totals';
   tableEl.appendChild(thEl);
 }
-makeDailyTotal();
+
+makeTableHeader();
 
 
 function makeTableRow() {
@@ -85,6 +81,39 @@ function makeTableRow() {
 makeTableRow();
 
 
+var makeHourlyTotals = function() {
+  var tableFoot = document.createElement('tfoot');
+  tableEl.appendChild(tableFoot);
+
+  var hourTotalTRow = document.createElement('tr');
+  tableFoot.appendChild(hourTotalTRow);
+
+  var hourTotalTH = document.createElement('th');
+  hourTotalTH.textContent = 'Totals';
+  hourTotalTRow.appendChild(hourTotalTH);
+  
+  var hourTotalTD;
+  var hourlyTotal = 0;
+  var dailyTotalFoot = 0;
+  
+  for (var i = 0; i < hours.length; i++) {
+    hourTotalTD = document.createElement ('td');
+    hourlyTotal = 0;
+
+    for(var j = 0; j < allLocations.length; j++) {
+      hourlyTotal += allLocations[j].cookiesSoldPerHour[i];
+    }
+    dailyTotalFoot += hourlyTotal;
+    hourTotalTD.textContent = hourlyTotal;
+    hourTotalTRow.appendChild(hourTotalTD);
+  }
+  hourTotalTD = document.createElement ('td');
+  hourTotalTD.textContent = dailyTotalFoot;
+  hourTotalTRow.appendChild(hourTotalTD);
+};
+makeHourlyTotals();
+
+
 var storeForm = document.getElementById('addstore');
 
 function createNewLocation(event) {
@@ -109,7 +138,6 @@ function createNewLocation(event) {
     var tdEl = document.createElement('td');
     tdEl.textContent = storeName;
     trEl.appendChild(tdEl);
-  
     console.log(tdEl);
   
     for (var i = 0; i < hours.length; i++) {
@@ -129,5 +157,4 @@ function createNewLocation(event) {
   event.target.avgcookies.value = null;
 }
 storeForm.addEventListener('submit',(createNewLocation));
-
 
