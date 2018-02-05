@@ -90,6 +90,7 @@ footer {
     position: relative;
     align-content: center;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 h3 {
@@ -106,6 +107,7 @@ p {
     margin-top: 10px;
     background-color: rgb(255, 198, 175);
     width: 95%;
+    text-align: center;
 }
 
 #family {
@@ -118,19 +120,22 @@ p {
     background-color: rgb(255, 130, 113);
     width: 40%;
     margin: auto;
-    border-bottom: 150px;
+    margin-bottom: 60px;
     position: relative;
+    padding-bottom: 30px;
 }
 
 #shirt {
     position: relative;
     margin-left: auto;
     overflow: auto;
+    text-align: center;
 }
 
 #merch {
     margin-top: 60px;
 }
+
 
 
 
